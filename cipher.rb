@@ -16,8 +16,13 @@ def caesar_cipher(string, shift)
   end
   puts shifted_letters
 end
-caesar_cipher("a b! c d!", 2)
 
-## add user input gets.chomp
+puts "Enter some words: "
+words = gets.chomp
+puts "Enter how many leters to shift over by: for example 7: "
+shift = gets.chomp.to_i
+caesar_cipher(words, shift)
+
+
 
 
